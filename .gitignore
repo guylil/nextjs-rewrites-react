@@ -1,0 +1,8 @@
+plain-react-front/.env
+plain-react-front/node_modules
+plain-react-front/build
+
+custom-routes-proxing-app/node_modules
+custom-routes-proxing-app/.next
+
+.idea
