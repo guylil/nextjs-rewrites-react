@@ -14,7 +14,7 @@
     "install:dep:react": "cd plain-react-front && npm i",
     "install:dep:next": "cd custom-routes-proxing-app && npm i",
     "dev": "concurrently --kill-others \"npm run dev:next\"  \"npm run dev:react\"",
-    "dev:react": "cd plain-react-front && PORT=8080 npm start",
+    "dev:react": "cd plain-react-front && npm start",
     "dev:next": "cd custom-routes-proxing-app && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

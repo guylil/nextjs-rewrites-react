@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 export default function Home() {
   return (
     <div>
@@ -10,10 +10,14 @@ export default function Home() {
       <Link href="/hello/[slug]" as="/hello/world">
         <a>Hello world</a>
       </Link>
-    <br/>
-    <Link href='/di'>
+      <br />
+      <Link href="/di">
         <a>Di</a>
-    </Link>
+      </Link>
+      <br />
+      <Link href="/lib-import">
+        <a>lib import</a>
+      </Link>
     </div>
-  )
+  );
 }
