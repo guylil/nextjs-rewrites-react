@@ -6,3 +6,4 @@ custom-routes-proxing-app/node_modules
 custom-routes-proxing-app/.next
 
 .idea
+node_modules

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start:next & npm run start:react",
+    "start": "concurrently --kill-others \"npm run start:next\" \"npm run start:react\"",
     "start:react": "cd plain-react-front && npx serve -s build -l 8080",
     "start:next": "cd custom-routes-proxing-app && npm run start",
     "build": "npm run build:react && npm run build:next",
@@ -13,8 +13,8 @@
     "install:dep": "npm run install:dep:next && npm run install:dep:react",
     "install:dep:react": "cd plain-react-front && npm i",
     "install:dep:next": "cd custom-routes-proxing-app && npm i",
-    "dev": "npm run dev:next & npm run dev:react",
-    "dev:react": "cd plain-react-front && npm start",
+    "dev": "concurrently --kill-others \"npm run dev:next\"  \"npm run dev:react\"",
+    "dev:react": "cd plain-react-front && PORT=8080 npm start",
     "dev:next": "cd custom-routes-proxing-app && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/guylil/nextjs-rewrites-react/issues"
   },
-  "homepage": "https://github.com/guylil/nextjs-rewrites-react#readme"
+  "homepage": "https://github.com/guylil/nextjs-rewrites-react#readme",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
 }
