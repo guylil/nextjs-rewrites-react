@@ -7,8 +7,7 @@ In order to test the app in prod (after build) please follow these instructions
 1. clone the repo and cd into it
 2. run ` npm run install:dep`
 3. run ` npm run build` in order to test the built app
-4. create env file with port for the React secondary app ro serve from`PUBLIC_URL=http://localhost:8080`
-5. run ` npm start`
+4. run ` npm start`
 
 This will start 2 servers, one for next.js  
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
